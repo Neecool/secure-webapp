@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Panel – All Users</h2>
+<ul>
+    {% for u in users %}
+        <li>{{ u.username }} ({{ u.role }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}
